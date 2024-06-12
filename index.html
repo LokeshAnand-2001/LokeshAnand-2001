@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokesh Anand's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="intro-video-container">
+        <video id="introVideo" autoplay muted>
+            <source src="Intro.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="site-content" style="display: none;">
+
+    <header>
+        <nav>
+            <div class="container">
+                <a href="#" class="logo" onclick="restartVideo()"><img src="Logo-1.png" alt="Logo" class="logo-img"></a>
+                <div class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="Resume.pdf" class="resume-btn" target="_blank" download>Resume</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--<section id="home" class="hero section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to My Portfolio</h1>
+                <p>I'm a passionate Full Stack Developer</p>
+                <a href="#about" class="btn scroll-link">Learn More</a>
+            </div>
+            <div class="hero-image">
+                <img src="My_Image.jpg" alt="Lokesh Anand" class="profile-pic">
+            </div>
+        </div>
+    </section>-->
+
+    <main id = "main-content">
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="neon-title"><center>About Me</center></h2>
+                <div class="about-content">
+                    <div class="about-image animate-left">
+                        <img src="Trial1.png" alt="Lokesh Anand" class="profile-pic">
+                    </div>
+                <div class="about-text animate-right">
+                    <p>Hello! I'm Lokesh Anand, a code-wrangling wizard with a knack for turning caffeine into clean code. Recently graduated with an MS in Computer Technology from Eastern Illinois University, I'm on the lookout for my next adventure (hint: it's a job, please hire me... IJK!). My journey through the realms of Computer Science has equipped me with a robust toolkit, from taming Java beasts with Spring Boot to making websites sparkle with React JS and Angular.
+
+                    <p>With real-world experience from my time as a Full Stack Developer Intern at Cognizant, my superpowers include crafting RESTful APIs, conjuring up user-friendly interfaces, and debugging with the precision of a Swiss watch. When I'm not coding, you might find me exploring the latest tech trends, tinkering with new programming languages, or enjoying a good laugh over a cup of coffee.</p>
+
+                    <p>Looking for someone to take your team to the next level? Well, it seems your search has brought you to the right place. Coincidence? I think not. 😉. Ready to code the future together? Let's connect! 🚀</p>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+
+        <!-- Experience, Education, Hobbies & Interests, Skills, Projects, Contact sections -->
+
+    <section id="experience" class="section">
+    <div class="container">
+        <h2 class="neon-title">Experience</h2>
+        <div class="experience-content">
+            <div class="experience-item">
+                <h3>Full Stack Developer Intern</h3>
+                <p>Cognizant Technology Solutions, Chennai, India | Jan 2022 – July 2022</p>
+                <ul>
+                    <li>Developed and maintained Java applications using Spring Boot, ensuring reliability. Implemented JUnit unit tests for code coverage and quality assurance.</li>
+                    <li>Utilized jQuery for dynamic front-end components, improving user experience. Contributed to MySQL database management for optimized data efficiency. Collaborated with cross-functional teams to deliver effective solutions.</li>
+                    <li>Additionally, gained proficiency in Amazon Web Services (AWS) technologies such as EC2, RDS, S3, IAM, SNS, and VPC. Utilized Jenkins and Jira for continuous integration and project management, respectively.</li>
+                </ul>
+            </div>
+            <div class="experience-image">
+                <img src="Experience.jpeg" alt="Experience Image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!---------------Education section---------------------------->
+
+
+<!--<section id="education" class="section">
+    <div class="container">
+        <h2>Education</h2>
+        <div class="education-image">
+            <img src="D:\Company\Portfolio\Education.jpeg" alt="Education Image">
+        </div>
+        <div class="education-grid">
+            <div class="education-item">
+                <h3>MS in Computer Technology</h3>
+                <p>Eastern Illinois University, Charleston, IL | GPA: 3.83 | Aug 2022 – May 2024</p>
+                <p>Courses: Computer Graphics, Wireless Mobile Communication, Computer Security, Database Systems, User Interaction.</p>
+            </div>
+            <div class="education-item">
+                <h3>BE in Computer Science and Engineering</h3>
+                <p>Anna University, Chennai, India | GPA: 3.5 | Jun 2018 – May 2022</p>
+                <p>Courses: Data Structures, Problem‑Solving and Python Programming, Design and Analysis of Algorithm, Object Oriented Programming(Java), Computer Architecture, Database Management System, Human‑Computer Interaction.</p>
+            </div>
+        </div>
+    </div>
+</section>-->
+
+
+<section id="education" class="section">
+    <div class="container">
+        <h2 class="neon-title">Education</h2>
+        <div class="education-content">
+            <div class="education-image">
+                <img src="Education.jpeg" alt="Education Image">
+            </div>
+            <div class="education-details">
+                <div class="education-item">
+                    <h3>MS in Computer Technology</h3>
+                    <p class="institution">Eastern Illinois University, Charleston, IL</p>
+                    <p class="duration">Aug 2022 – May 2024 | GPA: 3.83</p>
+                    <p class="courses">Courses: Computer Graphics, Wireless Mobile Communication, Computer Security, Database Systems, User Interaction.</p>
+                </div>
+                <div class="education-item">
+                    <h3>BE in Computer Science and Engineering</h3>
+                    <p class="institution">Anna University, Chennai, India</p>
+                    <p class="duration">Jun 2018 – May 2022 | GPA: 3.5</p>
+                    <p class="courses">Courses: Data Structures, Problem‑Solving and Python Programming, Design and Analysis of Algorithm, Object Oriented Programming(Java), Computer Architecture, Database Management System, Human‑Computer Interaction.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Skills Section------------------------------------>
+
+<section id="skills" class="section">
+    <div class="container">
+        <h2 class="neon-title">Skills</h2>
+        <div class="skills-container">
+            <div class="skill-item">
+                <i class="fas fa-code"></i>
+                <h3>Programming Languages</h3>
+                <p>Java, Spring Boot, JUnit, jQuery, Python, SQL, C, C++, OpenGL</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-desktop"></i>
+                <h3>Frontend Development</h3>
+                <p>HTML, CSS, JavaScript, Angular</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-server"></i>
+                <h3>Backend Development</h3>
+                <p>Spring Boot, RESTful API</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-tools"></i>
+                <h3>Software Tools</h3>
+                <p>Virtual Machine, LaTeX, Apache Tomcat, Git, Adobe XD, Visual Studio, Docker, Linux, Shell Script, Jira, Jenkins</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-cloud"></i>
+                <h3>Cloud Services</h3>
+                <p>Amazon's EC2, RDS, S3, IAM, SNS, VPC, Lambda</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-tasks"></i>
+                <h3>Other Skills</h3>
+                <p>Algorithms, Data Structures, MS - Word, Excel, PowerPoint, Access, Outlook</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="projects" class="section">
+    <div class="container">
+        <h2 class="neon-title">Projects</h2>
+        <div class="project-grid">
+                <div class="project-item" id="portfolioProject">
+                    <div class="project-image">
+                        <img src="Portfolio.png" alt="My Portfolio Website">
+                        <div class="project-overlay">
+                            <h4>My Portfolio Website</h4>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <p>This Website</p>
+                        <p>Designed and Developed this portfolio website using HTML, CSS, and JavaScript.</p>
+                        <p class="portfolio-message" style="display: none;">Well, you are looking at it right now!</p>
+                    </div>
+                </div>
+            <a href="https://xd.adobe.com/view/3b4e71fb-8756-4edc-ae01-6c01c7709aa1-6e1d/?fullscreen&hints=off" target="_blank" class="project-link">
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="University_Portal.png" alt="University's Student Portal">
+                        <div class="project-overlay">
+                            <h4>University's Student Portal</h4>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <p>Postgrad Project | Oct 2022 – Dec 2022</p>
+                        <p>Designed and optimized university's Student Portal wireframes...</p>
+                    </div>
+                </div>
+            </a>
+            <!--<a href="https://your-mobile-store-url.com" target="_blank" class="project-link"> 
+
+                Link for Internship project here---------->
+
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="Project-3.jpeg" alt="Online Mobile Accessories Store">
+                        <div class="project-overlay">
+                            <h4>Online Mobile Accessories Store</h4>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <p>Internship Project | Apr 2022 – Jun 2022</p>
+                        <p>Created a full stack e-commerce web page for purchasing mobile accessories online...</p>
+                    </div>
+                </div>
+            </a>
+            
+            <!--<a href="https://your-voting-system-url.com" target="_blank" class="project-link">
+
+                Link for Undergrad project here----------------->
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="Project-2.png" alt="Blockchain based Electronic Voting System">
+                        <div class="project-overlay">
+                            <h4>Blockchain based Electronic Voting System</h4>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <p>Undergrad Project</p>
+                        <p>Developed a web application using Java frameworks and MySQL to store voter details, implement login functionality, and hosted it on Tomcat. Integrated Google's Mailing service for sending OTP to voters, enabling secure voting after successful login.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+<!--Hobbies and Interests------------>
+
+<section id="hobbies-interests" class="section">
+    <div class="container">
+        <h2 class="neon-title">Hobbies & Interests</h2>
+        <div class="hobby-grid">
+            <div class="hobby-item">
+                <i class="fas fa-chess-board"></i>
+                <h3>Indoor Games</h3>
+                <p>Enjoy playing carrom, chess, and badminton.</p>
+            </div>
+            <div class="hobby-item">
+                <i class="fas fa-futbol"></i>
+                <h3>Outdoor Sports</h3>
+                <p>Passionate about cricket and football.</p>
+            </div>
+            <div class="hobby-item">
+                <i class="fas fa-headphones"></i>
+                <h3>Media Consumption</h3>
+                <p>Interested in listening to news, YouTube channels, and podcasts.</p>
+            </div>
+            <div class="hobby-item">
+                <i class="fas fa-mask"></i>
+                <h3>Entertainment</h3>
+                <p>Avid WWE fan, Movies and TV shows.</p>
+            </div>
+            <div class="hobby-item">
+                <i class="fas fa-comments"></i>
+                <h3>Social Activities</h3>
+                <p>Enjoy hanging out with friends and engaging in chit-chat.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Contact Info------------------------------------>
+
+
+<section id="contact" class="section">
+    <div class="container">
+        <div class="contact-content">
+            <div class="contact-info">
+                <h1 class="neon-title">Let's Connect</h1>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/lokesh-anand-ramadasan-a551261a4/" target="_blank" class="neon-icon">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="https://github.com/LokeshAnand-2001" target="_blank" class="neon-icon">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                    <a href="https://www.instagram.com/__lokesh__r/" target="_blank" class="neon-icon">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                </div>
+                <div class="contact-details">
+                    <p><i class="fas fa-phone-alt"></i> +1 559 420 9593</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:lokeshanand1201@gmail.com">       lokeshanand1201@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="contact-image">
+                <img src="Contact.jpeg" alt="Contact Image">
+            </div>
+        </div>
+
+
+
+        <!--<div class="contact-form">
+            <h2>Get in Touch</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>-->
+    </div>
+</section>
+
+<!-------------------Conclusion------------------
+
+<section id="conclusion" class="section">
+    <div class="container">
+        <h2 class="neon-title">Conclusion</h2>
+        <p>My journey through computer science has equipped me with robust skills in full stack development, cloud services, and user-centric design. My goal is to join a dynamic team to contribute to impactful projects and drive innovation. If hired, I will bring dedication, a problem-solving mindset, and a collaborative spirit to deliver high-quality results and contribute to your organization's success.</p>
+
+        <div class="button-container">
+            <button class="neon-button" onclick="showHireMessage()">Recruiter's must click here</button>
+        </div>
+    </div>
+</section>
+-->
+
+<section id="conclusion" class="section">
+    <div class="container">
+        <h2 class="neon-title">Conclusion</h2>
+        <p>My journey through computer science has equipped me with robust skills in full stack development, cloud services, and user-centric design. My goal is to join a dynamic team to contribute to impactful projects and drive innovation. If hired, I will bring dedication, a problem-solving mindset, and a collaborative spirit to deliver high-quality results and contribute to your organization's success.</p>
+
+        <div class="button-container">
+            <button class="neon-button" onclick="showHireMessage()">Hidden Message for Recruiters</button>
+        </div>
+    </div>
+</section>
+
+<div id="hire-message-overlay" class="overlay" style="display: none;">
+    <div class="overlay-content">
+        <h2 style="color: purple;">Warning: Hiring me may result in excessive productivity and a great sense of humor. Proceed with caution! 😜</h2>
+        <button class="close-btn" onclick="hideHireMessage()">Close</button>
+    </div>
+</div>
+
+
+        <!-- ... (same as your original code) ... -->
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-icon">
+                <a href="https://www.linkedin.com/in/lokesh-anand-ramadasan-a551261a4/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/LokeshAnand-2001" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/__lokesh__r/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2024 Lokesh Anand. All rights reserved.</p>
+        </div>
+    </footer>
+</div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
